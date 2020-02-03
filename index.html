@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <title>Zvika Markus Demo</title>
+    <script src="modernizer.js" type="text/javascript"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='css/styles.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+
+  </head>
+
+  <body>
+<dl class="accordion">
+  <dt class="accordion__title">Multi Graph</dt>
+  <dd class="accordion__content">
+   <img src="chart.jpg">
+  </dd>
+  <dt class="accordion__title">Settings</dt>
+  <dd class="accordion__content">
+  <br><br>
+  Working file name: <select>
+<option>Zvika Markus A</option>
+  <option>Zvika Test 2</option>
+  <option>Zvika</option>
+  <option>Zvi</option>
+</select> <br><br><br>
+<table dir=ltr>
+ <tr>
+	<td>
+	Commentes:
+	</td>
+	<td>
+	Suggestions:
+	</td>
+	<td></td>
+	<td>
+	Variable
+	</td>
+	<td>
+	Compare
+	</td>
+	<td>
+	Variable/Value
+	</td>
+	<td></td>
+	<td>
+	Rule
+	</td>
+		<td>
+	Variable
+	</td>
+	<td>
+	Compare
+	</td>
+	<td>
+	Variable/Value
+	</td></td>
+	</tr>
+	<tr>
+	<td>
+	<select>
+<option>Low CO2 + MV</option>
+  <option>Low CO2</option>
+  <option>Do     Z</option>
+</select> 
+</td>
+<td>
+<select>
+<option>increase CO2</option>
+  <option>Reduce O2<</option>
+  <option>Low         Z</option>
+</select> 
+</td>
+	<td><b>IF</b>
+	</td><td>
+	<select Width=100%>
+  <option>CO2</option>
+  <option>MV</option>
+  <option>O2</option>
+  <option>RR</option>
+    <option>SPO2</option>
+  <option>VCO2</option>
+  <option>VO2</option>
+  <option>RQ</option>
+</select></td><td>
+<select>
+<option>></option>
+  <option>==</option>
+  <option>!=</option>
+  <option><</option>
+  <option>></option>
+  <option><=</option>
+  <option>>=</option>
+</select>  
+</td><td>
+	<select Width=100%>
+  <option>CO2</option>
+  <option>MV</option>
+  <option>O2</option>
+  <option>RR</option>
+    <option>SPO2</option>
+  <option>VCO2</option>
+  <option>VO2</option>
+  <option>RQ</option>
+</select>L
+</td><td></td><td>
+<select>
+  <option></option>
+  <option>And</option>
+  <option>Or</option>
+</select>
+</td>
+<td>
+	<select Width=100%>
+  <option>CO2</option>
+  <option>MV</option>
+  <option>O2</option>
+  <option>RR</option>
+    <option>SPO2</option>
+  <option>VCO2</option>
+  <option>VO2</option>
+  <option>RQ</option>
+</select></td><td>
+<select>
+<option>>     </option>
+  <option>==</option>
+  <option>!=</option>
+  <option><</option>
+  <option>></option>
+  <option><=</option>
+  <option>>=</option>
+</select>  
+</td><td>
+	<select>
+  <option>CO2</option>
+  <option>MV</option>
+  <option>O2</option>
+  <option>RR</option>
+    <option>SPO2</option>
+  <option>VCO2</option>
+  <option>VO2</option>
+  <option>RQ</option>
+</select>L
+</td><td></td></tr></table>
+<br><br><br>
+<button>Save settings to working File</button><button>Export to file</button><button>Export to Network</button><button>New settings</button>
+
+
+	<!--
+	<button id="button" onlick="duplicate()">Add Comment</button><br>
+	
+
+	
+<br>	
+Comment Description: <input value="CO2 is too high"> And Suggestion: <input value="Increase MV"> Will Be Triggered
+<div>
+<B>IF</B> Parameter: <select>
+  <option>CO2</option>
+  <option>MV</option>
+  <option>O2</option>
+  <option>RR</option>
+    <option>SPO2</option>
+  <option>VCO2</option>
+  <option>VO2</option>
+  <option>RQ</option>
+</select>  is:  <select>
+<option>></option>
+  <option>==</option>
+  <option>!=</option>
+  <option><</option>
+  <option>></option>
+  <option><=</option>
+  <option>>=</option>
+</select>  
+ Value: <input value="0.7"> Liter  |         
+ <select>
+  <option></option>
+  <option>And</option>
+  <option>Or</option>
+</select> <br><br>
+Comment Description: <input value="CO2 + O2 are low"> And Suggestion: <input value="Increase MV"> Will Be Triggered
+<div>
+<B>IF</B> Parameter: <select>
+  <option>CO2</option>
+  <option>MV</option>
+  <option>O2</option>
+  <option>RR</option>
+    <option>SPO2</option>
+  <option>VCO2</option>
+  <option>VO2</option>
+  <option>RQ</option>
+</select>  is:  <select>
+<option><</option>
+  <option>==</option>
+  <option>!=</option>
+  <option><</option>
+  <option>></option>
+  <option><=</option>
+  <option>>=</option>
+</select>  
+ Value: <input value="0.7"> Liter  |         
+ <select>
+  <option>And</option>
+  <option></option>
+  <option>Or</option>
+</select> <br>
+<B>IF</B> Parameter: <select>
+  <option>O2</option>
+  <option>MV</option>
+  <option>CO2</option>
+  <option>RR</option>
+    <option>SPO2</option>
+  <option>VCO2</option>
+  <option>VO2</option>
+  <option>RQ</option>
+</select>  is:  <select>
+<option><</option>
+  <option>==</option>
+  <option>!=</option>
+  <option><</option>
+  <option>></option>
+  <option><=</option>
+  <option>>=</option>
+</select>  
+ Value: <input value="0.2"> Liter  |         
+<select>
+  <option></option>
+  <option>And</option>
+  <option>Or</option>
+</select>
+ 
+<br><br>
+	
+<div id="duplicater">
+Comment Description: <input> And Suggestion: <input> Will Be Triggered
+<div id="duplicaterrule"> 
+<B>IF</B> Parameter: <select>
+  <option>MV</option>
+  <option>CO2</option>
+  <option>O2</option>
+  <option>RR</option>
+    <option>SPO2</option>
+  <option>VCO2</option>
+  <option>VO2</option>
+  <option>RQ</option>
+</select>  is:  <select>
+  <option>==</option>
+  <option>!=</option>
+  <option><</option>
+  <option>></option>
+  <option><=</option>
+  <option>>=</option>
+</select>  
+ Value: <input> Liter  |         
+ <select>
+  <option></option>
+  <option id="buttonrule" onlick="duplicaterule()">And</option>
+  <option id="buttonrule" onlick="duplicaterule()">Or</option>
+</select> 
+
+ 
+</div>
+	
+</div><br>
+-->
+  </dd>
+
+  <dt class="accordion__title">Metabolic Screener</dt>
+  <dd class="accordion__content">
+    <img src=screener.gif>
+  </dd>
+    <dt class="accordion__title">Analyzer</dt>
+  <dd class="accordion__content">
+    <img src="ggg.jpg">
+  </dd>
+</dl>
+<p align=right>
+<button>Import settings from Network</button><button>Import settings from file</button></p>
+<br>
+
+    (C) Zvika Markus 2015<br><a href=mailto:zvi@zvikamarkus.a78.org>Zvi@ZvikaMarkus.a78.org</a><br>
+    <script src='jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+<script src="js/dup.js"></script>
+
+    
+    
+  </body>
+</html>
